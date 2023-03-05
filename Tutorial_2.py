@@ -30,7 +30,7 @@ else:
 # 3) Write a Python program to print natural numbers.
 
 n = int(input("Enter number:"))
-if n<0:
+if n<=0:
     print ("Please Enter positive number")
 else:
     for i in range (1,n):
