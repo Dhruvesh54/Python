@@ -3,7 +3,7 @@
 a=int(input("Enter first number :"))
 b=int(input("Enter second number :"))
 
-def lcm_gcd(num1,num2):
+def lcm_gcd(a,b):
     temp=a
     temp1=b
     while temp1!=0:
@@ -41,7 +41,7 @@ def fab(b):
     n1 = 0
     n2 = 1
     c = 1
-    print("sirese is:",n1)
+    print("series is:",n1)
     print(n2)
     while c != b:
         s = n1+n2
@@ -87,16 +87,19 @@ def f1(*l1):
 f1(1,2,3,4)
 
 def f2(*l1):
-    print(l1)
-f1(5,6,7,8)
+    print(l1[1])
+f2(5,6,7,8)
 
 def f3(*l1):
-    print(l1)
-f1(9,10,11,12)
-
+    r=0
+    for i in l1:
+        r+=i
+    print("sum",r)   
+f3(9,10)
 
 # 7) Write a Python program to explain default argument using defined function
 
-def f4(a,b=2):
-    print(a,b)
-f4(3)
+def f4(a=1,b=2):
+    sum=a+b
+    print(sum)
+f4(3,2)
